@@ -23,3 +23,5 @@ for (let i = 0; i < gridArray.length; i++) {
         addRow.appendChild(gridBox);
     }
 }
+// currently on step three of this site.
+// https://www.theodinproject.com/courses/web-development-101/lessons/etch-a-sketch-project?ref=lnav
