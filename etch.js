@@ -1,16 +1,9 @@
 
 
 function createGrid(gridSize) {
-    
-    // for (let i = 0; i < gridSize; i++) {
-    //     i;
-    //     let addRow = document.createElement("div");
-    //     addRow.setAttribute("id", "row" + i);
-    //     addRow.style.cssText = "display: table;clear: both;margin: 0 auto"
-    //     container.appendChild(addRow);
-        for (let j = 0; j < gridSize * gridSize; j++) {
+        for (let i = 0; i < gridSize * gridSize; i++) {
             let gridBox = document.createElement("div");
-            gridBox.setAttribute("id", "gridbox" + j);
+            gridBox.setAttribute("id", "gridbox" + i);
             gridBox.style.cssText = `background-color: black; opacity: 0;width: ${100/gridSize}%;height: ${100/gridSize}%; position: relative; float: left`
             gridBox.addEventListener('mouseover', () => {
                 if (gridBox.style.opacity == 0) {
